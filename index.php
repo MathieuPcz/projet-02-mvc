@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,9 @@
   <link rel="stylesheet" href="vue/css/index.css">
 </head>
 <body>
-     <div id="menu">
+     <div class="load"></div>
+     <div class="fadein">
+       <div id="menu">
      <img src="vue/images/bureau.jpg" id="vignette" alt="vignette">
       <nav>
         <ul class="nav-bar">
@@ -131,31 +134,32 @@
         
       </div>
   <div id="messagerie">
-  <?php if(!empty($_COOKIE['user'])){ ?>
-      <div id="headerMess"><div id="connect"></div><span>À Mathieu Paczesny</span><div id="closeMess"><img src="vue/images/croix.png" alt="close"></div></div>
-      <input type="text" id="message" placeholder="Votre message ...">
-  <?php }else{ ?>
+ 
+      
+
       <div id="imgContact"><img src="vue/images/profil.jpg" alt="profil"></div>
       <div id="textPresentationContact">
-        <span>Vous désirez me contacter ? Rien de plus simple, complétez le formulaire ci-dessous et vous accèderez à une messagerie instantannée.</span>
+        <span>Vous désirez me contacter ? Rien de plus simple, complétez le formulaire ci-dessous et un e-mail me sera envoyé.</span>
       </div>
       <div id="infoRegister"></div>
-      <input type="email" id="email" placeholder="Votre E-mail ...">
-      <input type="text" id="name" placeholder="Votre nom ...">
-      <input type="text" id="firstname" placeholder="Votre prénom ...">
-      <button id="enregistrer">S'enregistrer</button>      
-  <?php } ?>
+      <input type="email" id="email" placeholder="Votre E-mail ..." required>
+      <input type="text" id="name" placeholder="Votre nom complet..." required>
+      <input type="text" id="objet" placeholder="Objet ..." required>
+      <textarea  id="message" placeholder="Votre message ..." required></textarea> 
+      <button id="envoyer">Envoyer</button>   
+
   </div>
     <footer>
         <br><hr>
        <div id="infoFooter">
-         <span>Ce projet sera bientot propulsé par symfony 2</span> <a href="admin">Interface Administrateur</a> © <?php echo date('Y'); ?>
+         <span>Ce projet sera bientot propulsé par symfony 2</span> <a href="vue/admin">Interface Administrateur</a> © <?php echo date('Y'); ?>
        </div>
     </footer>
       </div>
 
+     </div>
 </body>
-<script type="text/javascript" src="vue/js/jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="vue/js/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="vue/js/jquery.scrollTo-1.4.3.1-min.js"></script>
 <script type="text/javascript" src="vue/js/main.js"></script>

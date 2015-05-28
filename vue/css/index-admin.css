@@ -1,0 +1,69 @@
+#formConnect{
+	width:400px;
+	margin:auto;
+	margin-top: 10%;
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	padding-bottom: 1%;
+	border:1px solid #EEEEEE;
+	color: #B6A1A3;
+	text-align: center;
+}
+#formConnect span{
+	color:#428bca;
+	font-style: italic;
+}
+.img-rond{
+	width: 100%;
+	display: block;
+	height: 100px;	
+	overflow: hidden;
+	text-align: center;
+}
+.img-rond img{
+	width: 75px;
+	height: 75px;
+	border-radius:100%;
+	margin-top: 13px;
+}
+#formConnect input{
+	display: block;
+	border:none;
+	width: 100%;
+	border-radius: 2px;
+	text-align: center;
+	margin-top: 1%;
+	height: 35px
+}
+#formConnect button{
+	display: block;
+	width: 26%;
+	margin-left: 37%;
+	margin-top: 2%;
+	height: 25px;
+	border:none;
+	border-radius: 2px;
+	color: white;
+	background-color: #3071a9;
+	cursor: pointer;
+}
+#formConnect button:hover{
+	border: 1px solid #3071a9;
+	background-color: #EEEEEE;
+	color: black;
+		-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+#formConnect a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin:2%;
+}
+#textConnectPresent{
+	display: block;
+	text-align: justify;
+	padding:2%;
+}

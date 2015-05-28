@@ -1,6 +1,61 @@
 $(document).ready(function(){
 
+	//load bar chargement
+	progressBar = {
+		countElement : 0,
+		loadElement : 0,
+
+
+		init : function(){
+
+
+		this.countElement =  $('div').length;
+
+		$('div').each(function(){
+			progressBar.loadElement ++;
+			progressBar.updateProgressBar();
+		});
+		
+		},
+
+		
+		
+		updateProgressBar : function() {
+
+		
+			
+			$('.load').stop().animate({
+				'width' : (progressBar.loadElement/progressBar.countElement)*100 + '%'
+			},1000, 'linear' ,function(){
+
+
+				if(progressBar.loadElement == progressBar.countElement){
+					$('.load').css('display','none');
+					$('.imgLoad').css('display','none');
+					$('.fadein').fadeIn(800);
+
+				}
+			});
+
+		}
+	}
+
+	progressBar.init();
+
 	$.localScroll();		
+
+	//gestion statistique 
+
+	$.ajax({
+			url : 'controler/appelFunction.php?function=statistique',
+			type :'post',
+			cache: false,
+			data : {
+				url : 'mathieupaczesny.com'
+				},
+				success: function(data){
+			}
+		});
 
 	/*gestion couleur menu defilement*/
 	
@@ -120,24 +175,25 @@ $(document).ready(function(){
 
 	/*save user ajax method */
 
-	/*$('#enregistrer').click(function(){
+	$('#envoyer').click(function(){
+
 		$.ajax({
-			url : "{{ path('anonymusRegister') }}",
+			url : 'controler/appelFunction.php?function=sendEmail',
 			type :'post',
 			cache: false,
 			data : {
 				email : $('#email').val(),
-				name : $('#name').val(),
-				firstname : $('#firstname').val()
+				sujet : $('#objet').val(),
+				longname : $('#name').val(),
+				message : $('#message').val()
 				},
 				beforeSend: function(){
-					$('#infoRegister').html('Chargement en cours...');
+					$('#infoRegister').html('Envoie en cours...');
 				},
 				success: function(data){
 					$('#infoRegister').html(data);
-				
 			}
 		});
-	});*/
+	});
 
 })

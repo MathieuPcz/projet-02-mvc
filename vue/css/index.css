@@ -1,0 +1,201 @@
+.activeMenu{
+	color:#ED4040;
+}
+
+/* premiere interface #home */
+#home{
+	background: url('../images/bureau.jpg');
+	background-size: cover;
+	text-align: center;
+}
+#home .colorTitle{
+	color:#ED4040;	
+	display: inline-block;
+	vertical-align: top;
+}
+#home .contenu{
+	padding-top: 25%;
+	font-size: 1.2em;
+}
+#home .defilText{
+	max-height: 50px;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-style: italic;
+}
+#downScrow{
+	margin-top: 2%;
+	cursor: pointer;
+	padding:3%;
+}
+.defilText li{
+	padding:1%;
+}
+.container h1,.container h2{
+	text-transform: uppercase;
+	margin-top: 2%;
+}
+/* second interface about */
+#about .imgProfil{
+	width: 20%;
+	height: 180px;
+	margin:1%;
+	border-radius: 100%;
+	float: left;
+	overflow: hidden;
+}
+.imgProfil img{
+	width:100%;
+}
+#mesSites{
+	width: 100%;
+}
+/* troisième interface actu */
+.actuRubrique{
+	width: 20%;
+	height: 180px;
+	overflow: hidden;
+	border:1px solid white;
+	text-align: center;
+	margin:1%;
+	background-color: #3071a9;
+	color: white;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+}
+.actuRubrique img{
+	width: 100%;
+}
+.actuInfo{
+	margin:1%;
+	padding:1%;
+}
+/* quatrième interface projet */
+.selectMenu{
+	color:#ED4040;
+	border-bottom:2px solid #ED4040;
+}
+#log{
+	width: 100%;
+	text-align: center;
+}
+#menuProjet ul{
+	text-align: center;
+	margin:1%;
+}
+#menuProjet li{
+	margin-right: 5%;
+	display: inline-block;
+	vertical-align: top;
+}
+#menuPorjet a{
+	display: inline-block;
+	padding-bottom: 2px;
+}
+.projets h2{
+	margin:1%;
+}
+#second-projet,#troisieme-projet,#quatrieme-projet{
+	display: none;
+}
+.projets iframe{
+	width: 100%;
+	height: 500px;
+}
+/* cinquième interface compétence */
+#competences h2{
+	margin-bottom: 2%;
+}
+#competences img{
+	width:10%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	cursor: pointer;
+	margin-right: 5%;
+}
+#imgIntegration,#imgDev,#imgInfographie{
+	text-align: center;
+}
+.progress{
+	background-color: #000F1C;
+	width:100%;
+	color: #000F1C;
+	border-radius: 5px;
+}
+.barreProgress{
+	background-color: #2AACD9;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	text-shadow: 0 1px 0 #000;
+}
+
+/* interface messagerie */
+#messagerie{
+	width:400px;
+	height: 400px;
+	margin:auto;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 1%;
+	border:1px solid #CFCFCF;
+	background-color: #EEEEEE;
+	overflow: hidden;
+	display: none;
+}
+/* partie 1 messagerie creation de compte */
+#textPresentationContact{
+	padding: 5%;
+}
+#messagerie input{
+	width: 100%;
+	height: 25px;
+	border:none;
+	text-align: center;
+	margin-top: 2px;
+}
+#infoRegister{
+}
+#imgContact{
+	width: 100%;
+	height: 50px;
+	padding-top: 3px;
+	background-color: #000F1C;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+#imgContact img{
+	width:45px;
+	height: 45px;
+	border-radius: 100%;
+}
+#enregistrer{
+	margin-left:110px;
+}
+#message{
+	margin-top: 1%;
+	width: 100%;
+	height: 90px;
+	text-align: center;
+	font-family: calibri;
+	font-size: 0.9em;
+	padding:2px;
+	border:none;
+}
+#envoyer{
+	margin-left: 155px;
+}
+footer #infoFooter{
+	text-align: center;
+	width: 100%;
+}
+footer span, footer a{
+	margin:2%;
+}
+footer #reseauFooter{
+	height: 200px;
+}
